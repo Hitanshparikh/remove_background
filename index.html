@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background Remover</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Image Background Remover</h1>
+        <div class="container">
+            <label class="custom-file-upload">
+                <input type="file" id="upload" accept="image/*">
+                Choose File
+            </label>
+            <button id="remove-bg-btn">Remove Background</button>
+            <button id="download-btn" style="display: none;">Download Image</button>
+        
+            <!-- Loading Spinner -->
+            <div id="loading-spinner" class="spinner" style="display: none;"></div>
+        
+            <div id="preview">
+                <div class="image-box">
+                    <h2>Original Image</h2>
+                    <img id="original-img" alt="Original Image">
+                </div>
+                <div class="image-box">
+                    <h2>Result Image</h2>
+                    <img id="result-img" alt="Result Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer style="text-align: center; margin-top: 20px; padding: 10px; font-size: 0.9em; background-color: #f1f1f1;">
+        <p>Created by Hitansh Parikh</p>
+        <p>
+            <a href="https://github.com/hitanshparikh" target="_blank">GitHub</a> |
+            <a href="https://hitanshparikh.com" target="_blank">Portfolio</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
